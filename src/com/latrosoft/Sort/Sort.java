@@ -12,7 +12,7 @@ public class Sort {
 
     public void insertionSort() {
         for (int i = 1; i < arr.length; i++) {
-            int value = arr[i];
+                int value = arr[i];
             int hole = i;
             while (hole > 0 && arr[hole - 1] > value) {
                 arr[hole] = arr[hole - 1];
@@ -23,9 +23,9 @@ public class Sort {
     }
 
     public void selectionSort() {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length-1; i++) {
             int min = i;
-            for (int j = i + 1; j < arr.length - 1; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[min] > arr[j]) {
                     min = j;
                 }

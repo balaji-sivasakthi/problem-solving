@@ -1,3 +1,4 @@
+import com.latrosoft.ADT.LL;
 import com.latrosoft.Sort.Sort;
 
 import java.util.Arrays;
@@ -5,12 +6,17 @@ import java.util.Arrays;
 public class Main {
 
 
+
     public static void main(String[] args) {
-      Sort s = new Sort(new int[]{3,6,2,8,5,1});
-      int a[]=s.mergeSort(s.getArr());
-      for(int i=0;i<a.length;i++){
-          System.out.print(a[i]+" ");
-      }
+
+        LL list = new LL();
+        list.insertValeIntoFirst(10);
+        list.insertValeIntoFirst(20);
+        list.insertValeIntoFirst(30);
+        list.insertValeIntoFirst(70);
+        list.insertValueintoLast(100);
+        list.display();
+
     }
 }
 
